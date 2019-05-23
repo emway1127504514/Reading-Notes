@@ -1,1 +1,2 @@
-
+摘要：
+基于Visual Attention mechanism提出Attention LSTM(AL),根据网络不同,可以构建AL-ResNets和AL-RoR。
