@@ -1,2 +1,6 @@
 摘要：
-基于Visual Attention mechanism提出Attention LSTM(AL),根据网络不同,可以构建AL-ResNets和AL-RoR。
+基于Visual Attention mechanism提出Attention LSTM(AL),根据网络不同,可以构建AL-ResNets和AL-RoR提取对年龄敏感的局部特征。
+训练过程1.先在ImageNet预训练一个ResNet或RoR，并在IMDB-WIKI-101上微调；
+2.在特定的人脸年龄数据集上对模型进行微调，提取全局特征；
+3.利用LSTM模块提取对人脸年龄敏感的局部特征的集合；
+4.联合全局特征和局部特征对模型进行训练和测试
